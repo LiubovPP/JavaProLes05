@@ -2,12 +2,14 @@ package de.ait.spring_app.controllers;
 
 import de.ait.spring_app.model.Account;
 import de.ait.spring_app.model.Client;
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
 @RestController
+@AllArgsConstructor
 public class AccountController {
 
 @GetMapping ("/accounts")
