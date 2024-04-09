@@ -2,12 +2,13 @@ package de.ait.spring_app.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.ToString;
 
 @Data
 @AllArgsConstructor
-public class Client {
+
+public class Transaction {
     private Long id;
-    private String name;
-    private String email;
+    private Account debit;
+    private Account credit;
+    private double amount;
 }
